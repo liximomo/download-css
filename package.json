@@ -1,6 +1,6 @@
 {
   "name": "download-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/download-css.js",
   "bin": "./bin/download-css.js",
   "dependencies": {
@@ -28,6 +28,7 @@
     "test": "jest"
   },
   "files": [
+    "bin",
     "dist"
   ],
   "jest": {

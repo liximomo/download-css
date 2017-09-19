@@ -160,8 +160,10 @@ var main = (() => {
         urls.push(finalUrl);
 
         // url rewrite
+        const newUrlPrefix = rewriteUrl.endsWith('/') ? rewriteUrl.slice(0, rewriteUrl.length - 1) : rewriteUrl;
+
         // eslint-disable-next-line no-param-reassign
-        declaration.value = `url(${path$$1.join(rewriteUrl, assetPath.name)})`;
+        declaration.value = `url(${newUrlPrefix}/${assetPath.name})`;
       });
       return urls;
     }, []);
